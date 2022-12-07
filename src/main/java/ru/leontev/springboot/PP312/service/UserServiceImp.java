@@ -26,11 +26,6 @@ public class UserServiceImp implements UserService {
         userDao.delete(id);
     }
 
-//    @Override
-//    public void delete(User user) {
-//        userDao.delete(user);
-//    }
-
     @Override
     public void update(long id, User user) {
         userDao.update(id, user);
@@ -42,11 +37,6 @@ public class UserServiceImp implements UserService {
         return userDao.show(id);
     }
 
-//    @Override
-//    @Transactional(readOnly = true)
-//    public List<User> find(User user) {
-//        return userDao.find(user);
-//    }
 
     @Override
     @Transactional(readOnly = true)

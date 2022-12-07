@@ -54,19 +54,4 @@ public class UserDaoImp implements UserDao {
             System.out.println(e.getLocalizedMessage());
         }
     }
-
-
-//    public void delete(User user) {
-//        entityManager.joinTransaction();
-//        find(user).forEach(u -> entityManager.remove(u.getId()));
-//    }
-
-
-//    public List<User> find(User user) {
-//        TypedQuery<User> query = entityManager.createQuery("from User where name=:n and last_name=:f and email=:e", User.class);
-//        query.setParameter("n", user.getName());
-//        query.setParameter("f", user.getLast_name());
-//        query.setParameter("e", user.getEmail());
-//        return query.getResultList();
-//    }
 }
